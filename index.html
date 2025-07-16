@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AZA Token – Powered by People & Pets</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #0f172a;
+      color: #f8fafc;
+    }
+    nav {
+      background: #111827;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+    nav a {
+      color: #facc15;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav .social-icons i {
+      color: #facc15;
+      margin-left: 15px;
+      font-size: 1.2rem;
+      transition: transform 0.3s;
+    }
+    nav .social-icons i:hover {
+      transform: scale(1.2);
+    }
+    .header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      padding: 60px 20px;
+      background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+    }
+    .header img {
+      width: 300px;
+      border-radius: 50%;
+      box-shadow: 0 0 15px #facc15;
+    }
+    .header-text {
+      max-width: 500px;
+      text-align: center;
+    }
+    .header-text h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3.2rem;
+      color: #facc15;
+      margin-bottom: 20px;
+    }
+    .header-text p {
+      font-size: 1.1rem;
+      color: #fef08a;
+    }
+    .cta {
+      display: inline-block;
+      margin-top: 25px;
+      background: linear-gradient(to right, #facc15, #fde047);
+      color: #1e293b;
+      padding: 14px 28px;
+      font-weight: bold;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .cta:hover {
+      box-shadow: 0 0 12px #facc15;
+      transform: translateY(-2px);
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      color: #facc15;
+      font-family: 'Orbitron', sans-serif;
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+    .airdrop-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .countdown {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
+      flex: 1;
+      min-width: 280px;
+      text-align: center;
+    }
+    .countdown span {
+      display: block;
+      font-size: 2rem;
+      color: #facc15;
+    }
+    .airdrop-info {
+      flex: 1;
+      min-width: 280px;
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
+    }
+    iframe {
+      border: none;
+      border-radius: 12px;
+    }
+    footer {
+      background: #111827;
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div>
+      <img src="logo.png" alt="AZA Logo" style="width:40px; border-radius:50%; vertical-align:middle; margin-right:10px;">
+      <a href="#about">About</a>
+      <a href="#airdrop">Airdrop</a>
+      <a href="#swap">Swap</a>
+      <a href="#whitepaper">Whitepaper</a>
+    </div>
+    <div class="social-icons">
+      <a href="https://x.com/aza_token" target="_blank" title="X / Twitter"><i class="fab fa-x-twitter"></i></a>
+      <a href="https://t.me/aza_token" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
+      <a href="https://t.me/aza_community_alerts" target="_blank" title="Alerts"><i class="fa fa-bell"></i></a>
+    </div>
+  </nav>
+
+  <div class="header">
+  <img src="aza.png" alt="AZA Token Mascot" style="max-width: 280px; border-radius: 50%; box-shadow: 0 0 20px #facc15;">
+  
+  <div class="header-text">
+    <h1 style="font-family: 'Orbitron', sans-serif; font-size: 3.5rem; color: #facc15; margin-bottom: 10px;">
+      AZA Token
+    </h1>
+    
+    <p style="font-size: 1.2rem; color: #e2e8f0; line-height: 1.6;">
+      The future of community-driven crypto on <strong>Base Chain</strong>.<br>
+      Empowering people and pets with real-world value, airdrops, and long-term vision.
+    </p>
+
+    <div style="margin: 20px 0;">
+      <span style="display: block; font-size: 0.95rem; color: #fef9c3;">Smart Contract:</span>
+      <code style="background: #1e293b; padding: 8px 12px; border-radius: 8px; font-size: 0.9rem; display: inline-block; color: #facc15;">
+        0x2fdE0E00A047f722e2380Ba1a3e1035E0CD2d168
+      </code>
+    </div>
+
+    <a class="cta" href="https://t.me/AzaTokenOfficial_bot" target="_blank" style="margin-right: 10px;">
+      🎁 Claim 5,000 $AZA
+    </a>
+    
+    <a class="cta" href="#swap" style="background: #1e40af; color: #f8fafc;">
+      🔄 Swap Now
+    </a>
+  </div>
+</div>
+
+
+  <section id="about" style="text-align: center;">
+  <h2 style="font-family: 'Orbitron', sans-serif; color: #facc15; font-size: 2.5rem; margin-bottom: 20px;">
+    What is AZA Token?
+  </h2>
+
+  <p style="max-width: 800px; margin: auto; font-size: 1.1rem; line-height: 1.8; color: #e2e8f0;">
+    <strong>AZA</strong> is more than just a token — it's a movement powered by <em>real people, real values</em>, and a vision for a decentralized future.
+    Built on the secure and scalable <strong>Base Chain</strong>, AZA Token aims to bridge the gap between Web3 technology and real-world impact.
+  </p>
+
+  <br>
+
+  <p style="max-width: 800px; margin: auto; font-size: 1.1rem; line-height: 1.8; color: #e2e8f0;">
+    Whether you're here to <strong>claim an airdrop</strong>, <strong>trade securely</strong>, or <strong>join a cause</strong> that supports animal shelters, community creativity, and transparent crypto utility — AZA welcomes you.
+  </p>
+
+  <br>
+
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; margin-top: 40px;">
+    <div style="flex: 1; min-width: 250px;">
+      <h3 style="color: #facc15;">🔒 Secure & Scalable</h3>
+      <p style="color: #94a3b8;">Powered by Base, AZA benefits from fast, low-cost, and eco-friendly transactions.</p>
+    </div>
+    <div style="flex: 1; min-width: 250px;">
+      <h3 style="color: #facc15;">🤝 Community-Driven</h3>
+      <p style="color: #94a3b8;">Every holder is part of the AZA ecosystem — with voting rights, referrals, and reward systems.</p>
+    </div>
+    <div style="flex: 1; min-width: 250px;">
+      <h3 style="color: #facc15;">🐶 Purpose & Impact</h3>
+      <p style="color: #94a3b8;">A portion of future fees will support real-world animal shelters and Web3 education programs.</p>
+    </div>
+  </div>
+</section>
+
+
+  <section id="airdrop" style="background: radial-gradient(circle at top, #1e293b, #0f172a); padding: 60px 20px;">
+  <h2 style="font-family: 'Orbitron', sans-serif; font-size: 2.4rem; color: #facc15; text-align: center; margin-bottom: 40px;">
+    🚀 AZA Airdrop is Live!
+  </h2>
+
+  <div class="airdrop-section" style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center; gap: 40px; max-width: 1000px; margin: auto;">
+
+    <!-- Airdrop Info -->
+    <div class="airdrop-info" style="flex: 1; min-width: 300px; background: #1e293b; padding: 30px; border-radius: 16px; box-shadow: 0 0 20px rgba(250, 204, 21, 0.2); text-align: center;">
+      <h3 style="font-size: 1.4rem; color: #fef08a; margin-bottom: 20px;">🎁 Claim Your Share</h3>
+      <p style="color: #e2e8f0; font-size: 1rem;">Total Airdrop Supply:</p>
+      <p style="font-size: 1.6rem; color: #facc15; font-weight: bold;">100,000,000 $AZA</p>
+      <p style="color: #94a3b8; margin: 15px 0;">Each early supporter can claim</p>
+      <p style="font-size: 1.4rem; color: #fef08a;"><strong>5,000 $AZA</strong> via Telegram bot</p>
+      <a class="cta" href="https://t.me/AzaTokenOfficial_bot" target="_blank"
+         style="display: inline-block; margin-top: 25px; background: linear-gradient(to right, #facc15, #fef08a); color: #1e293b; padding: 14px 28px; font-weight: bold; border-radius: 12px; text-decoration: none; transition: 0.3s;">
+         ✅ Join Airdrop
+      </a>
+    </div>
+
+  <!-- Countdown Timer -->
+<div class="countdown"
+     style="flex: 1; min-width: 300px; background: linear-gradient(to bottom right, #1e293b, #0f172a); padding: 36px 24px; border-radius: 20px; text-align: center; box-shadow: 0 0 25px rgba(250, 204, 21, 0.25); position: relative; overflow: hidden;">
+
+  <h3 style="color: #fde68a; font-size: 1.4rem; margin-bottom: 16px; font-weight: 600; letter-spacing: 0.5px;">
+    ⏳ Airdrop Launches In
+  </h3>
+
+  <div id="timer"
+       style="font-size: 2.6rem; font-family: 'Orbitron', sans-serif; color: #facc15; margin: 10px 0;">
+    30d 00h 00m 00s
+  </div>
+
+  <p style="color: #cbd5e1; font-size: 0.95rem; margin-top: 10px; font-style: italic;">
+    🎁 Whitelist is filling up fast — reserve your spot today!
+  </p>
+
+  <!-- Optional glowing bottom line -->
+  <div style="position: absolute; bottom: 0; left: 0; height: 4px; width: 100%;
+              background: linear-gradient(to right, #facc15, #fde047); box-shadow: 0 0 12px #facc15;"></div>
+</div>
+
+
+
+ <section id="swap">
+  <h2>Live Swap</h2>
+  <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; align-items: flex-start;">
+    <iframe
+      id="dextswap-aggregator-widget"
+      title="DEXTswap Aggregator"
+      width="400"
+      height="420"
+      style="border: none; border-radius: 12px;"
+      src="https://www.dextools.io/widget-aggregator/en/swap/base/0x2fde0e00a047f722e2380ba1a3e1035e0cd2d168">
+    </iframe>
+
+    <iframe
+      title="Uniswap Swap"
+      width="400"
+      height="420"
+      style="border: none; border-radius: 12px;"
+      src="https://app.uniswap.org/#/swap?outputCurrency=0x2fdE0E00A047f722e2380Ba1a3e1035E0CD2d168&chain=base">
+    </iframe>
+  </div>
+</section>
+
+  <section id="whitepaper" style="background-color: #1e293b; padding: 60px 20px; border-radius: 16px; margin-top: 40px;">
+  <h2 style="color: #facc15; font-family: 'Orbitron', sans-serif; text-align: center; font-size: 2.2rem; margin-bottom: 30px;">
+    📜 AZA Token Whitepaper
+  </h2>
+
+  <div style="max-width: 900px; margin: auto; color: #fef9c3; font-size: 1.05rem; line-height: 1.6;">
+    <p><strong>🎯 Mission:</strong><br>
+    Empower people, pets, and purpose by building the most heart-driven token on BASE. We believe in crypto for real-world impact – where every meme, message and microtransaction brings change.</p>
+
+    <p><strong>🧩 Token Utility:</strong><br>
+    $AZA is more than a memecoin – it's a community token with real features:<br>
+    ▪️ Staking Rewards for holders<br>
+    ▪️ Access to exclusive Telegram & Discord channels<br>
+    ▪️ Governance voting (DAO)<br>
+    ▪️ Tiered airdrops for active users<br>
+    ▪️ Future use in NFTs, games, and merchandise</p>
+
+    <p><strong>🚀 Future Roadmap:</strong><br>
+    ▪️ Donations to verified animal shelters (tracked on-chain)<br>
+    ▪️ Launch of "AZA Pups" – an NFT series based on real rescued dogs<br>
+    ▪️ Web3 educational tools for children and teens<br>
+    ▪️ AZA-powered mini-games and AR experiences<br>
+    ▪️ Community-driven grant pool for pet-related initiatives</p>
+
+    <p style="margin-top: 30px; text-align: center;">
+      <a href="whitepaper.pdf" target="_blank"
+         style="background: linear-gradient(to right, #facc15, #fde047); color: #1e293b; padding: 14px 28px; font-weight: bold; border-radius: 12px; text-decoration: none;">
+        📥 Download Full Whitepaper (PDF)
+      </a>
+    </p>
+  </div>
+</section>
+
+
+  <section id="roadmap" style="background-color: #0f172a; padding: 60px 20px; border-radius: 16px; margin-top: 40px;">
+  <h2 style="color: #facc15; font-family: 'Orbitron', sans-serif; text-align: center; font-size: 2.2rem; margin-bottom: 30px;">
+    🗺️ Roadmap
+  </h2>
+
+  <div style="max-width: 800px; margin: auto; color: #fef9c3; font-size: 1.05rem; line-height: 1.8;">
+    <ul style="list-style: none; padding: 0;">
+      <li><strong>📅 Q2 2025:</strong> Launch $AZA, Airdrop via Telegram Bot, Uniswap Listing, Community Growth</li>
+      <li><strong>🚀 Q3 2025:</strong> Major Marketing Campaign, NFT Collection (AZA Pups), Influencer & KOL partnerships, Community Competitions</li>
+      <li><strong>🏛️ Q4 2025:</strong> DAO Voting Launch, Integration of Animal Shelter Donation System, Pet Content Creator Grants</li>
+      <li><strong>🌐 2026:</strong> Multi-chain Bridge (Base ↔ ETH ↔ BNB), Pet Metaverse Preview, Mobile Wallet App Launch, Staking Pools</li>
+      <li><strong>🌍 2027+:</strong> $AZA adoption in pet services, charity tracking dashboard, real-world pet tagging w/ NFC + blockchain</li>
+    </ul>
+
+    <div style="text-align: center; margin-top: 30px;">
+      <a href="#whitepaper" style="background: linear-gradient(to right, #facc15, #fde047); color: #1e293b; padding: 14px 28px; font-weight: bold; border-radius: 12px; text-decoration: none;">
+        📘 Learn More in the Whitepaper
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- 📥 Join Whitelist Popup -->
+<div id="whitelist-popup" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:9999; justify-content:center; align-items:center;">
+  <div style="background:#1e293b; padding:30px; border-radius:16px; width:90%; max-width:400px; text-align:center; color:white;">
+    <h3>Join the Whitelist</h3>
+    <input type="text" placeholder="Telegram Username" style="width:100%; margin:10px 0; padding:10px; border-radius:8px;">
+    <input type="text" placeholder="Wallet Address (Base)" style="width:100%; margin:10px 0; padding:10px; border-radius:8px;">
+    <input type="email" placeholder="Email" style="width:100%; margin:10px 0; padding:10px; border-radius:8px;">
+    <button style="margin-top:15px; background:#facc15; padding:10px 20px; border:none; border-radius:8px; font-weight:bold; cursor:pointer;">Submit</button>
+    <br><br>
+    <a href="#" onclick="document.getElementById('whitelist-popup').style.display='none'" style="color:#f87171;">Close</a>
+  </div>
+</div>
+<script>
+function openWhitelist() {
+  document.getElementById('whitelist-popup').style.display = 'flex';
+}
+</script>
+
+<!-- 💬 FAQ Section -->
+<section id="faq" style="background:#0f172a; color:white; padding:60px 20px;">
+  <h2 style="text-align:center; color:#facc15;">Frequently Asked Questions</h2>
+  <details style="margin:20px 0;">
+    <summary>How do I join the airdrop?</summary>
+    <p>Click the "Join Airdrop" button and follow the instructions via Telegram bot.</p>
+  </details>
+  <details style="margin:20px 0;">
+    <summary>Is AZA a memecoin?</summary>
+    <p>AZA is more than a meme – it's a real token with utility, roadmap, and community purpose.</p>
+  </details>
+  <details style="margin:20px 0;">
+    <summary>Where can I trade AZA?</summary>
+    <p>You can swap AZA directly on Uniswap or through DEXTswap aggregator.</p>
+  </details>
+</section>
+
+<!-- 🐾 AZA for Animals -->
+<section id="animals" style="padding:60px 20px; text-align:center;">
+  <h2>AZA for Animals</h2>
+  <p>We pledge to allocate a portion of the token utility and fees towards supporting animal shelters and rescue initiatives.</p>
+  <p>We are building partnerships with NGOs and shelters – and soon, token holders will vote where the donations go!</p>
+</section>
+
+<footer style="background:#111827; color:#94a3b8; padding:40px 20px; text-align:center; font-size:0.9rem; position:relative;">
+  <div style="max-width:1000px; margin:auto; display:flex; flex-wrap:wrap; justify-content:space-between; gap:20px; align-items:center;">
+
+    <!-- Sekcja: Logo + info -->
+    <div style="flex:1; min-width:200px;">
+      <img src="logo.png" alt="AZA Logo" style="width:50px; border-radius:50%; margin-bottom:10px;">
+      <p>&copy; 2025 <strong>AZA Token</strong></p>
+      <p>Built on <strong>Base Chain</strong> | Powered by <strong>People & Pets</strong></p>
+    </div>
+
+    <!-- Sekcja: Szybkie linki -->
+    <div style="flex:1; min-width:200px;">
+      <h4 style="color:#facc15; margin-bottom:10px;">Explore</h4>
+      <p><a href="#about" style="color:#fef08a; text-decoration:none;">About AZA</a></p>
+      <p><a href="#airdrop" style="color:#fef08a; text-decoration:none;">Airdrop Info</a></p>
+      <p><a href="#swap" style="color:#fef08a; text-decoration:none;">DEX Swap</a></p>
+      <p><a href="#whitepaper" style="color:#fef08a; text-decoration:none;">Whitepaper</a></p>
+    </div>
+
+    <!-- Sekcja: Kontakt i social -->
+    <div style="flex:1; min-width:200px;">
+      <h4 style="color:#facc15; margin-bottom:10px;">Connect</h4>
+      <p><a href="mailto:team@azatoken.org" style="color:#fef08a;">team@azatoken.org</a></p>
+      <div style="margin-top:10px;">
+        <a href="https://x.com/aza_token" target="_blank" title="X/Twitter" style="margin:0 10px; color:#facc15;"><i class="fab fa-x-twitter fa-lg"></i></a>
+        <a href="https://t.me/aza_token" target="_blank" title="Telegram" style="margin:0 10px; color:#facc15;"><i class="fab fa-telegram fa-lg"></i></a>
+        <a href="https://t.me/aza_community_alerts" target="_blank" title="Alerts" style="margin:0 10px; color:#facc15;"><i class="fa fa-bell fa-lg"></i></a>
+        <a href="https://app.uniswap.org/#/swap?outputCurrency=0x2fde0e00a047f722e2380ba1a3e1035e0cd2d168&chain=base" target="_blank" title="Uniswap" style="margin:0 10px; color:#facc15;"><i class="fa fa-sync-alt fa-lg"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Join Airdrop CTA -->
+  <div style="margin-top:30px;">
+    <a class="cta" href="https://t.me/AzaTokenOfficial_bot" target="_blank"
+       style="background: linear-gradient(to right, #facc15, #fde047); color: #1e293b; padding: 12px 24px; font-weight: bold; border-radius: 10px; text-decoration: none;">
+      🎁 Join Airdrop Now
+    </a>
+  </div>
+
+  <!-- Scroll to top -->
+  <div onclick="window.scrollTo({top: 0, behavior: 'smooth'});" title="Back to top"
+       style="position: absolute; bottom: 10px; right: 20px; cursor: pointer; font-size: 1.2rem; color: #facc15;">
+    ⬆️
+  </div>
+</footer>
+
+
+  <script>
+    function updateCountdown() {
+  const end = new Date();
+  end.setDate(end.getDate() + 30);
+  const x = setInterval(() => {
+    const now = new Date().getTime();
+    const t = end - now;
+    if (t < 0) {
+      document.getElementById("timer").innerHTML = "🔥 Airdrop Started!";
+      clearInterval(x);
+    } else {
+      const days = Math.floor(t / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((t % (1000 * 60)) / 1000);
+      document.getElementById("timer").innerHTML =
+        `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }
+  }, 1000);
+}
+updateCountdown();
+
+  </script>
+
+</body>
+</html>
